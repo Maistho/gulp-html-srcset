@@ -1,0 +1,21 @@
+{
+  "name": "gulp-html-srcset",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:maistho/gulp-html-srcset.git",
+  "author": "Gustav Bylund <maistho@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.6",
+    "@types/through2": "^2.0.33",
+    "@types/vinyl": "^2.0.1",
+    "typescript": "^2.6.2"
+  }
+}
