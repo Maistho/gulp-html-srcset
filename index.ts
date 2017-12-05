@@ -4,9 +4,35 @@ import * as File from 'vinyl'
 import * as stream from 'stream'
 
 export interface InputOptions {
+    /**
+     * Array with numbers for each width to generate srcset for
+     *
+     * a `1` means to generate the original width
+     *
+     * Example: `[1, 720, 360]`
+     */
     width?: number[]
+    /**
+     * Array with strings for each image format to generate srcset for
+     *
+     * Example: `['webp', 'jpg']`
+     */
     format?: string[]
+    /**
+     * Prefix to add to the image url, before the size
+     *
+     * Default: `'@'`
+     *
+     * The format of the generated string is `${filename}${prefix}${width}${postfix}`
+     */
     prefix?: string
+    /**
+     * Postfix to add to the image url, after the size
+     *
+     * Default: `'w'`
+     *
+     * The format of the generated string is `${filename}${prefix}${width}${postfix}`
+     */
     postfix?: string
 }
 
