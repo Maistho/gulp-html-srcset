@@ -1,8 +1,9 @@
 import * as through from 'through2'
 import * as cheerio from 'cheerio'
 import * as File from 'vinyl'
+import * as stream from 'stream'
 
-interface InputOptions {
+export interface InputOptions {
     width?: number[]
     format?: string[]
     prefix?: string
@@ -23,7 +24,7 @@ const defaultOptions: Options = {
 };
 
 
-export const htmlSrcset = (inputOptions: InputOptions = {}) => through.obj((file: File, enc, cb) => {
+export const htmlSrcset = (inputOptions: InputOptions = {}): stream.Transform => through.obj((file: File, enc, cb) => {
 
     if (inputOptions.width) {
         ;(inputOptions as Options).sizes = inputOptions.width
