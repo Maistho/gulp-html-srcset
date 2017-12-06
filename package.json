@@ -1,6 +1,6 @@
 {
   "name": "gulp-html-srcset",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "main": "index.js",
   "types": "./index.d.ts",
   "repository": "git@github.com:maistho/gulp-html-srcset.git",
@@ -17,8 +17,8 @@
     "gulp-html-transform": "^1.0.0"
   },
   "devDependencies": {
-    "gulp-html-transform": "^1.0.0",
     "@types/cheerio": "^0.22.6",
+    "gulp-html-transform": "^1.0.0",
     "typescript": "^2.6.2"
   }
 }
