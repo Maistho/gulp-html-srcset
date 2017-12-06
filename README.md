@@ -1,4 +1,6 @@
 # gulp-html-srcset
+This is a plugin for [gulp-html-transform](https://github.com/maistho/gulp-html-transform)
+
 Converts html srcsets to automatically add all your responsive images
 
 Works very nicely with [gulp-srcset](https://github.com/TrigenSoftware/gulp-srcset)
@@ -19,15 +21,18 @@ $ yarn add gulp-html-srcset
 
 #### gulpfile.js
 ```javascript
+const { transform } = require('gulp-html-transform')
 const { htmlSrcset } = require('gulp-html-srcset')
 
 gulp.task('html', () => {
-    gulp.src('src/**/*.html')
-    .pipe(htmlSrcset({
-        width: [1, 720],
-        format: ['webp', 'jpg'],
-    })
-    .pipe(gulp.dest('dist'))
+  gulp.src('src/**/*.html')
+  .pipe(transform(
+    htmlSrcset({
+      width: [1, 720],
+      format: ['webp', 'jpg'],
+    }),
+  ))
+  .pipe(gulp.dest('dist'))
 })
 ```
 

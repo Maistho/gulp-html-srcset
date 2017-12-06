@@ -1,5 +1,4 @@
-/// <reference types="node" />
-import * as stream from 'stream';
+import { Transformer } from 'gulp-html-transform';
 export interface InputOptions {
     /**
      * Array with numbers for each width to generate srcset for
@@ -32,5 +31,5 @@ export interface InputOptions {
      */
     postfix?: string;
 }
-export declare const htmlSrcset: (inputOptions?: InputOptions) => stream.Transform;
+export declare const htmlSrcset: (inputOptions?: InputOptions) => Transformer;
 export default htmlSrcset;

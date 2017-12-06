@@ -16,18 +16,6 @@
   dependencies:
     "@types/events" "*"
 
-"@types/through2@^2.0.33":
-  version "2.0.33"
-  resolved "https://registry.yarnpkg.com/@types/through2/-/through2-2.0.33.tgz#1ff2e88a100dfb5b140e7bb98791f1194400d131"
-  dependencies:
-    "@types/node" "*"
-
-"@types/vinyl@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@types/vinyl/-/vinyl-2.0.1.tgz#6b414dfdcd4a785e8e76e87565ed29e79490d9b7"
-  dependencies:
-    "@types/node" "*"
-
 boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
@@ -98,6 +86,13 @@ domutils@^1.5.1:
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
+
+gulp-html-transform@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-html-transform/-/gulp-html-transform-1.0.0.tgz#b1cfc51afa1d4fb6e983d0cf41b1a22cfbd220c0"
+  dependencies:
+    cheerio "^1.0.0-rc.2"
+    through2 "^2.0.3"
 
 htmlparser2@^3.9.1:
   version "3.9.2"
